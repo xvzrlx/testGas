@@ -2,7 +2,7 @@
 
 
 body{
-
+    margin: 0;
     background-color: #020B14;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,6 +13,11 @@ body{
 }
 
 /*Шапка*/
+
+#reddot{
+    margin: 0px 0px 18px 0px;
+}
+
 .divider hr{
     border: none;
     height: 2px;
@@ -71,16 +76,6 @@ body{
     display: flex;
     justify-content: space-between;
     color: #BFC9D4;
-}
-
-/*Расширенная форма*/
-
-.background-phone p{
-    font-family: Roboto;
-    color: #BFC9D4;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
 }
 
 

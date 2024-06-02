@@ -1,0 +1,74 @@
+body{
+    margin: 0px 113.5px 0px 113.5px;
+    background-color: #020B14;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+
+/*Шапка*/
+
+#reddot{
+    margin: 0px 0px 18px 0px;
+}
+
+.divider hr{
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #0699DB 0%, #2D5E87 25%, #2E2A3F 50%, #341926 75%, #150C15 100%);
+}
+
+.header-top{
+    margin: 0px 113.5px;
+}
+
+.Rutube-icon{
+    padding: 28px 0px;
+}
+
+/*Инфо-блок*/
+.thnks-container{
+    margin: auto;
+    text-align: center;
+}
+
+.thnks-container-text h3{
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 22px;
+}
+
+.submit-btn{
+    background-color: #00A1E7;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    transition: 1.2s;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: #005d85;
+}
+
+.submit-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    padding: auto;
+}
+
+
+@media(max-width: 690px){
+    .thnks-container img{
+        width: 400px;
+    }
+    body{
+        margin: 0px;
+    }
+}

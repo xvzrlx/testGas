@@ -24,6 +24,10 @@ body{
     background: linear-gradient(90deg, #0699DB 0%, #2D5E87 25%, #2E2A3F 50%, #341926 75%, #150C15 100%);
 }
 
+#reddot{
+    margin: 0px 0px 18px 0px;
+}
+
 .Rutube-icon{
     padding: 28px 0px;
 }
