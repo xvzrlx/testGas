@@ -1,39 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@media (max-width: 1600px){
-    .feedback-mood{
-        display: flex;
-        justify-content: space-between;
-        margin:10px 0px 0px 0px;
-    }
-}
-
-@media (max-width: 1200px){
-    .feedback-mood{
-        display: flex;
-        justify-content: space-between;
-        margin:10px 0px 0px 0px;
-    }
-}
-
 
 body{
-    margin: 0;
-    margin-left: 113.5px;
-    margin-right: 113.5px;
-    padding: 0;
+    margin: auto;
+    max-width: 550px;
     background-color: #020B14;
     font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-div{
-    margin: 0;
-    padding: 0;
 }
 
 .main{
-    justify-content: center;
+    min-width: 600px;
 }
 /*
 .background-phone{
@@ -60,15 +36,10 @@ div{
     text-align: center;
 }
 
-.feedback-container{
-    padding: 0px 300px;
-}
-
 .feedback-text h4{
     margin-top: 30px;
     font-size: 17px;
     font-weight: 300;
-    padding: 0px 60px;
 }
 
 /*Оценка*/
@@ -80,7 +51,6 @@ div{
     background-color: #020B14;
     border: #1F73F9 solid 1px;
     color: white;
-    margin-right: 10px;
     cursor: pointer;
 }
   
@@ -90,11 +60,8 @@ div{
     background-color: #1F73F9;
 }
   
-  #submit-button {
-    margin-top: 20px;
-}
-
 .feedback-mood{
+    margin: 10px 30px 0px 20px;
     display: flex;
     justify-content: space-between;
     color: #BFC9D4;
@@ -108,6 +75,17 @@ div{
     font-weight: 400;
     font-size: 17px;
     line-height: 22px;
-    margin: 25px 0px;
 }
 
+
+
+
+@media(max-width: 375px){
+    .main{
+        min-width: 200px;
+    }
+
+    body{
+        max-width: 300px;
+    }
+}

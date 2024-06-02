@@ -1,1 +1,0 @@
-const click = document.getElementsByClassName('answer-button')
