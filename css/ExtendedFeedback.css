@@ -2,14 +2,19 @@
 
 
 body{
-
+    margin: 0px 113.5px 0px 113.5px;
     background-color: #020B14;
     font-family: 'Roboto', sans-serif;
 }
 
-.feedback{
-    max-width: 550px;
-    margin: auto;
+.main{
+    min-width: 600px;
+}
+
+.background-phone{
+    background-image: url(../source/image2.svg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 /*Шапка*/
@@ -19,61 +24,41 @@ body{
     background: linear-gradient(90deg, #0699DB 0%, #2D5E87 25%, #2E2A3F 50%, #341926 75%, #150C15 100%);
 }
 
-.header-top{
-    margin: 0px 113.5px;
-}
-
 .Rutube-icon{
     padding: 28px 0px;
 }
 
-/*Текстовое обращение*/
-
-.feedback{
-    color: white;
-    text-align: center;
-}
-
-.feedback-text h4{
-    margin-top: 30px;
-    font-size: 17px;
-    font-weight: 300;
-}
-
 /*Оценка*/
-.feedback-button {
+.answer-button {
     width: 50px;
     height: 50px;
+    margin: 0px 3px;
     border-radius: 50%;
     border: none;
     background-color: #020B14;
     border: #1F73F9 solid 1px;
     color: white;
     cursor: pointer;
-    transition: 1.5s;
 }
   
-.feedback-button:focus,
-.feedback-button:active {
+.answer-button:focus,
+.answer-button:active {
+    transition: 1.5s;
     background-color: #1F73F9;
 }
 
-.feedback-button {
-    touch-action: manipulation;
-}
-  
-.feedback-button:active {
-    transform: scale(0.9);
-}
-
-.feedback-mood{
-    margin: 10px 30px 0px 20px;
-    display: flex;
-    justify-content: space-between;
+.answer-button[data-question-id="1"] {
+    margin: 8px 0px;
+    font-family: Roboto;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px, 16px, 0px, 16px;
     color: #BFC9D4;
 }
-
-/*Расширенная форма*/
 
 .background-phone p{
     font-family: Roboto;
@@ -83,21 +68,32 @@ body{
     line-height: 22px;
 }
 
+.question p{
+    margin-top: 28px;
+}
+
+.submit-button{
+    width: 222px;
+    height: 44px;
+    border-radius: 22px;
+    padding: 12px, 16px, 12px, 16px;
+    margin-top: 28px;
+    margin-bottom: 126px;
+}
+
 
 @media(max-width: 650px){
+    .background-phone{
+        background-image: none;
+    }
     .main{
         min-width: 200px;
     }
 
     body{
-        max-width: 300px;
-        margin: auto;
+        margin: 16px 16px 28px 16px;
     }
     #feedback-img{
         width: 300px;
-    }
-    
-    .header-top{
-        margin: auto;
     }
 }
