@@ -28,18 +28,18 @@ body{
 }
 
 /*Инфо-блок*/
-.thnks-container{
+.plugs-container{
     margin: auto;
     text-align: center;
 }
 
-.thnks-container-text h3{
+.plugs-container-text h3{
     font-size: 14px;
     font-weight: lighter;
     line-height: 22px;
 }
 
-.submit-btn{
+#submit-btn{
     background-color: #00A1E7;
     width: 200px;
     height: 40px;
@@ -65,7 +65,7 @@ body{
 
 
 @media(max-width: 690px){
-    .thnks-container img{
+    .plugs-container img{
         width: 400px;
     }
     body{

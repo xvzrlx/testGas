@@ -33,7 +33,7 @@ body{
 }
 
 /*Оценка*/
-.answer-button {
+.answer-button{
     width: 50px;
     height: 50px;
     margin: 0px 3px;
@@ -45,11 +45,10 @@ body{
     cursor: pointer;
 }
   
-.answer-button:focus,
-.answer-button:active {
-    transition: 1.5s;
+.answer-button.clicked {
     background-color: #1F73F9;
-}
+    transition: 1.5s;
+  }
 
 .answer-button[data-question-id="1"] {
     margin: 8px 0px;
@@ -95,7 +94,7 @@ body{
     }
 
     body{
-        margin: 16px 16px 28px 16px;
+        margin: 2px;
     }
     #feedback-img{
         width: 300px;

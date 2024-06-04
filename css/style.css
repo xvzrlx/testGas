@@ -58,17 +58,9 @@ body{
     transition: 1.5s;
 }
   
-.feedback-button:focus,
-.feedback-button:active {
+.answer-button.clicked {
     background-color: #1F73F9;
-}
-
-.feedback-button {
-    touch-action: manipulation;
-}
-  
-.feedback-button:active {
-    transform: scale(0.9);
+    transition: 1.5s;
 }
 
 .feedback-mood{
