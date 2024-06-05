@@ -84,6 +84,29 @@ body{
     margin-bottom: 126px;
 }
 
+@media (max-width: 1024px){
+    body{
+        margin: 0;
+    }
+    .Rutube-icon{
+        margin-left: 20px;
+    }
+
+    .feedback-list{
+        margin-left: 20px;
+    }
+
+    #ExtendedFeedback-firstP{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 880px){
+    .background-phone{
+        background-image: none;
+    }
+}
+
 
 @media(max-width: 650px){
     .background-phone{
@@ -98,5 +121,10 @@ body{
     }
     #feedback-img{
         width: 300px;
+    }
+
+    .submit-button{
+
+        width: 96%;
     }
 }

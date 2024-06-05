@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 const isCompleted = localStorage.getItem('isCompleted');
-
+const rating = localStorage.getItem('rating');
   
 if (isCompleted){
     window.location.href = 'https://xvzrlx.github.io/testGas/pages/srry.html';
     const answers = JSON.parse(localStorage.getItem('answers'));
-    console.log(answers);
 }
 
 const answerButtons = document.querySelectorAll('.answer-button');
 const submitButton = document.querySelector('.submit-button');
 
-let answers = {};
+let answers = {
+  '0': rating
+};
 
 answerButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
@@ -30,8 +31,11 @@ answerButtons.forEach((button) => {
     button.disabled = true;
     button.classList.add('clicked');
   
-    if (Object.keys(answers).length === 6) {
+    if (Object.keys(answers).length === 7) {
       submitButton.disabled = false;
+      submitButton.style.color = "white";
+      submitButton.style.background = "#00A1E7";
+      submitButton.style.border = "none";
     }
   });
 });

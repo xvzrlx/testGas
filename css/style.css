@@ -70,13 +70,28 @@ body{
     color: #BFC9D4;
 }
 
+@media (max-width: 1024px){
+    .header-top{
+        margin: 0;
+        width: 100%;
+     }
 
-@media(max-width: 650px){
+     .Rutube-icon{
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 650px){
     .main{
         min-width: 200px;
     }
 
-    body{
+    .Rutube-icon{
+        margin-left: 20px;
+    }
+
+    .feedback{
         max-width: 300px;
         margin: auto;
     }
@@ -85,6 +100,7 @@ body{
     }
     
     .header-top{
-        margin: auto;
+       margin: 0;
+       width: 100%;
     }
 }

@@ -5,8 +5,6 @@ body{
     color: white;
 }
 
-
-
 /*Шапка*/
 
 #reddot{
@@ -54,13 +52,23 @@ body{
     background-color: #005d85;
 }
 
-.submit-btn a{
+.submit-btn{
     text-decoration: none;
     color: white;
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
     padding: auto;
+}
+
+@media(max-width: 1024px){
+    body{
+        margin: 0px;
+    }
+
+    .Rutube-icon{
+        margin-left: 20px;
+    }
 }
 
 
@@ -70,5 +78,23 @@ body{
     }
     body{
         margin: 0px;
+    }
+    
+    .Rutube-icon{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 460px){
+    .plugs-container-text h1{
+        font-size: 20px;
+    }
+
+    .plugs-container img {
+        width: 335px;
+    }
+
+    .Rutube-icon{
+        margin-left: 20px;
     }
 }

@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
   buttons.forEach((button) => {
       button.addEventListener('click', (e) => {
           const rating = button.getAttribute('data-rating');
-          window.location.assign('https://xvzrlx.github.io/testGas/pages/ExtendedFeedback.html');
+          localStorage.setItem('rating', rating);
+          window.location.href = 'https://xvzrlx.github.io/testGas/pages/ExtendedFeedback.html';
           button.classList.add('clicked');
       });
   });
